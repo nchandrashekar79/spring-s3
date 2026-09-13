@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-s3
+  servlet:
+    multipart:
+      max-file-size: 25MB
+      max-request-size: 25MB
+
+app:
+  s3:
+    bucket: ${S3_BUCKET}
+    region: ${AWS_REGION:us-east-1}
